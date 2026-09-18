@@ -1,0 +1,62 @@
+What this is
+
+I'm working through the AWS Generative AI Developer material and sharing what I learn as I go. I'm not teaching a course — I'm summarising the topics I covered and explaining them in my own words, which is the fastest way I know to find out whether I actually understood something.
+
+This block was about agents — AI that does things rather than just answering — and then about making any of it survive real users and a real budget.
+
+The three videos
+Part	            Title	                                         What it covers
+1	                What AI Agents Are and How They Work	         Chatbot vs agent, the think-act loop, tools, memory, multi-agent workflows, humans in the loop	~6 min
+2	                Building Agents on AWS	                       Strands Agents, Bedrock AgentCore, policies and evaluators, Amazon Q Business, Amazon Quick	~6 min
+3	                Making It Fast and Affordable	                 Token cost, cheaper models, caching, time to first token, backoff and cross-region inference	~6 min
+
+Each part has a slide deck and a written transcript. The transcript is also in the speaker notes of the PowerPoint file, so you can open the deck and read along.
+
+What's in this folder
+BLA-02-Agentic-AI-and-Optimization/
+├── README.md
+├── slides/
+│   ├── Part1-What-AI-Agents-Are.pptx
+│   ├── Part2-Building-Agents-on-AWS.pptx
+└── └── Part3-Fast-and-Affordable.pptx
+
+What I covered
+
+Agentic AI — LLM agents in Bedrock, the deprecation of Bedrock Agents, multi-agent workflows, short and long-term agent memory, Strands Agents, Agent Squad, Amazon Bedrock AgentCore (memory, tools, gateway, identity, policies, evaluators), the Model Context Protocol, OpenAPI and tool use, humans in the loop, Amazon Q Business and Q Apps, and Amazon Quick (Spaces, connectors, Flows, Automate, Research and Apps).
+
+Operational efficiency and optimisation — token efficiency, cost-effective model selection, resource utilisation and throughput, intelligent caching, building responsive systems, optimising retrieval performance, foundation model system performance, exponential backoff and connection pooling, and Amazon Bedrock cross-region inference.
+
+The five things I'll actually remember
+
+1. An agent runs a loop, and the model isn't doing the work. Think, pick a tool, act, check, repeat. The model decides what to do next — something else does each job. That made agents far less mysterious.
+
+2. The tool list is your real control. An agent can only ever do what you gave it tools for. And a tool's plain-English description isn't documentation — it's the thing that makes the agent choose correctly.
+
+3. Ask what happens if it's wrong, not whether it can. Almost always it can. Looking up an order — let it run. Refunding a large amount or deleting a record — put a person in front of it.
+
+4. Get identity right early. It's easy to build an agent with admin permissions, because that's the version that works first time. But then anyone talking to it can reach anything it can reach. The agent should act as the person asking.
+
+5. A prompt is a running cost, not a one-off. You pay per token, in and out, on every single request. Retrieve three pages instead of twenty. Summarise old chat history. Ask for shorter answers. And cache the stable questions — never the personal ones.
+
+One more, on the difference between a demo and a product: a chatbot that gives a bad answer is embarrassing. An agent that gets it wrong has done something. The mistake isn't a sentence, it's an event — which is why policies and evaluators matter more here than they did last block.
+
+What I'd do differently
+
+Check what AWS is deprecating before following a tutorial. Bedrock Agents and Q Business are both being retired, and plenty of guides still teach them. Five minutes checking the current service page would have saved me starting in the wrong place.
+
+Links
+	
+Part 1 video	[add link]
+Part 2 video	[add link]
+Part 3 video	[add link]
+
+LinkedIn post 1	[add link]
+LinkedIn post 2	[add link]
+LinkedIn post 3	[add link]
+A note on sources
+
+Everything here is written in my own words. I don't reproduce course slides, video content or exam material. These are notes from working through the material — not a system I've built and run in a live AWS account.
+
+I'm still learning, so if you spot something I've got wrong, please open an issue.
+
+References: the AWS Certified Generative AI Developer – Professional course by Sundog Education / Udemy, and the AWS documentation for Bedrock AgentCore, Strands Agents, Amazon Q Business and Bedrock cross-region inference.
