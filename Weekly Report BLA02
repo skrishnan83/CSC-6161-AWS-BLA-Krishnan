@@ -1,0 +1,22 @@
+Summary of Learning:
+•	An AI agent differs from a chatbot in that it works towards a goal rather than answering a single question — it runs a reasoning loop of think, select a tool, act, and evaluate, repeating until the task is complete.
+•	The foundation model in an agent does not perform the work itself; it decides which action to take next, while the connected tools carry out each step. This makes the tool list the primary control surface for what an agent is able to do.
+•	Agents are given capabilities through action groups, OpenAPI schemas that expose existing APIs, or the Model Context Protocol (MCP), an emerging open standard that allows any agent to use any compliant tool.
+•	Agent memory operates at two levels: short-term memory maintains context within a single conversation, while long-term memory persists across sessions — the latter carries data-retention and privacy implications that must be designed for deliberately.
+•	Multi-agent workflows address the accuracy loss that occurs when a single agent is given too many tools. A router agent delegates to specialist agents, each holding only the tools relevant to its domain.
+•	Amazon is deprecating Bedrock Agents; current development should use Strands Agents for authoring and Amazon Bedrock AgentCore for production runtime.
+•	Strands Agents is a model-driven framework — the developer supplies a goal, a tool list and a model, and the model plans the execution sequence itself rather than following a hard-coded flow.
+•	Amazon Bedrock AgentCore provides the production runtime: Memory for persistence, Gateway for converting existing APIs into agent tools, Identity for scoping agent permissions to the invoking user, and Runtime for execution at scale.
+•	AgentCore Policies enforce constraints while an agent is running, while AgentCore Evaluators test agent behaviour before release — an important distinction, since an incorrect agent action is an executed event rather than merely an incorrect answer.
+•	Human-in-the-loop approval should be applied on the basis of consequence rather than capability: irreversible or high-value actions require confirmation, while read-only and draft actions can run autonomously.
+•	Amazon Q Business and Q Apps provide pre-built enterprise assistants with connectors to SharePoint, Confluence, Salesforce and S3, and enforce existing document-level permissions; Amazon Quick extends this to self-service Spaces, Flows and Apps for non-developers.
+•	Token efficiency is the primary cost lever in generative AI systems — billing applies to both input and output, so system prompts, retrieved context and conversation history each represent a recurring rather than one-off cost.
+•	Cost-effective model selection and intelligent routing direct low-complexity requests to smaller models and reserve larger models for tasks requiring genuine reasoning, which materially reduces spend at production volume.
+•	Prompt caching reuses a static instruction prefix at a discounted rate, while semantic caching serves previously generated answers to semantically equivalent questions — with the caveat that user-specific responses must never be cached.
+•	Perceived responsiveness is governed by time to first token rather than total completion time; streaming responses, faster retrieval and shorter outputs all improve the experience users actually notice.
+•	Resilience at scale is achieved through exponential backoff with jitter, connection pooling, and Amazon Bedrock cross-region inference, which routes requests to alternative regions when the primary region is throttled.
+
+Reflection:
+The most useful shift this week was recognising that building an agent is largely a systems design exercise rather than a prompt engineering one. Deciding which tools an agent may access, whose permissions it operates under, and which actions require human approval determines both its usefulness and its risk profile. The optimisation chapter reinforced a related point: a system that works, a system that is fast, and a system that is affordable are three distinct engineering problems, and solving only the first is a common failure mode.
+
+Next week's plan: Managing Models with SageMaker AI; More Tools for Building AI Applications
