@@ -1,1 +1,71 @@
+BLA-01 — Generative AI Fundamentals, Amazon Bedrock, and Managing Data
+
+Course: AWS Certified Generative AI Developer – Professional (AIP-C01) 
+
+Programme: M.S. Computer Science, Concordia University Chicago 
+
+Me: Smita Krishnan (@skrishnan83)
+
+This folder holds everything from my first two-week block: three short video links, and the slides behind them.
+
+What this is
+
+I'm working through the AWS Generative AI Developer material and sharing what I learn as I go. This isn't a course and I'm not teaching one — I'm summarising the topics I covered and explaining them in my own words, which is the fastest way I know to find out whether I actually understood something.
+
+I've kept it deliberately plain. Where I could use a real example instead of a definition, I did.
+
+The three videos
+Part	     Title	                                                What it covers
+1	         Generative AI and Amazon Bedrock: The Basics	          What generative AI is, foundation models, what Bedrock gives you, model settings, four ways to customise a model
+2	         Connecting AI to Your Own Data	                        Why a model doesn't know your business, RAG, embeddings, chunking, knowledge bases, preparing messy data
+3	         Keeping It Safe, Accurate and Affordable	              What goes wrong, guardrails, stopping made-up answers, prompt injection, measuring quality, cost
+
+What's in this folder
+BLA-01-GenAI-Bedrock-and-Data/
+├── README.md
+├── slides/
+│     ├── Part1-GenAI-and-Bedrock-Basics.pptx
+│     ├── Part2-Connecting-AI-to-Your-Data.pptx
+└──   └── Part3-Safe-Accurate-Affordable.pptx
+
+What I covered
+
+Generative AI fundamentals and Bedrock — foundation models, Amazon Bedrock and its four APIs, model access and pricing, the Bedrock playground, fine-tuning and continued pre-training, LoRA, retrieval-augmented generation, knowledge bases and vector stores, chunking strategies, optimising embeddings, evaluating a RAG system, multimodal models, guardrails and automated reasoning checks, token-level redaction, prompt management and flows, prompt engineering, prompt misuse and bias, enterprise integration, and the AWS Well-Architected Generative AI Lens.
+
+Managing data for generative AI — structured and unstructured data, Bedrock Data Automation, SageMaker Data Wrangler, AWS Glue and Glue Data Quality, CloudWatch, Amazon Transcribe, Amazon Comprehend, OpenSearch as a vector store, S3 Vectors, RDS, Aurora with pgvector, DynamoDB, and S3 storage classes, lifecycle rules, encryption and access control.
+
+Services that appear in the videos: Amazon Bedrock · Amazon Titan · Amazon Nova · Anthropic Claude · Meta Llama · AI21 Jurassic-2 · Stable Diffusion · Bedrock Knowledge Bases · Bedrock Guardrails · Amazon OpenSearch · Amazon S3 · Amazon Transcribe · Amazon Comprehend · AWS Glue · AWS Lambda · Amazon CloudWatch
+
+
+The five things I'll remember
+
+1. Generative AI creates, where traditional AI predicts. Old machine learning tells you an email is spam. Generative AI writes the reply. You go from getting a label to getting a piece of work.
+
+2. Set temperature or top-P, never both. They do the same job. Change both and you can't reproduce your own results. Reading invoices? Temperature 0. Writing marketing copy? Turn it up.
+
+3. A model knows nothing about your business until you show it. RAG fixes that by searching your documents first and answering from what it finds. And when a policy changes you update the document — you don't retrain anything.
+
+4. Chunking matters more than I expected. Cut a document in the wrong place and the model sees "employees may carry over holiday" without "up to a maximum of five days". The answer is fluent, confident and wrong. Easy to create, hard to spot.
+
+5. A carefully worded instruction is not security. Your instruction sits inside the model's thinking, and that's exactly what a prompt injection targets. A guardrail runs outside the model. Better still, strip personal data out before you store it — you can't leak what was never there.
+
+
+Links
+	
+Part 1 video	https://youtu.be/EOr9p9h4i7E
+Part 2 video	https://youtu.be/GpZn-pg2mlk?si=bm8CVKDUEg4EG1Q6
+Part 3 video	https://youtu.be/Cpq9_agtv8U?si=zzTKWzIV5mxGXQep
+
+LinkedIn: https://lnkd.in/p/g7GFh-Eb
+        : https://lnkd.in/p/gq-EKdqZ
+        : https://lnkd.in/p/gHprPxux
+
+
+A note on sources
+
+Everything here is written in my own words. I don't reproduce course slides, video content or exam material, and I won't. If the topic interests you, the course is worth taking.
+
+I'm still learning, so if you spot something I've got wrong, please open an issue — I'd much rather be corrected.
+
+References: the AWS Certified Generative AI Developer – Professional course by Sundog Education / Udemy, and the AWS materials from AWS Skill Builder
 
