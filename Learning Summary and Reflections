@@ -1,0 +1,33 @@
+Weekly Report
+Focus: Managing Models with Amazon SageMaker AI; More Tools for Building AI Applications
+Resources: AWS SkillBuilder Cloud Practitioner Essentials, Udemy AWS Generative AI course (Stephane Maarek & Frank Kane)
+
+Summary of Learning:
+•	Amazon SageMaker AI is used when a model needs to be owned rather than simply consumed — for training, fine-tuning, or hosting open-source models on chosen infrastructure — whereas Amazon Bedrock provides managed, pay-per-request access to ready-made foundation models.
+•	SageMaker supports the full machine learning lifecycle: data processing, model training, model registration, deployment to an endpoint, and ongoing monitoring, with retraining as data changes.
+•	Deployment safeguards reduce the risk of releasing a new model: canary deployments shift a small share of traffic first, linear deployments move traffic in steps, and blue/green deployments run old and new versions side by side, with automatic rollback triggered by CloudWatch alarms.
+•	Endpoint choice has a large effect on cost: real-time endpoints for immediate responses, serverless for intermittent traffic, asynchronous for long-running requests, and batch transform for scoring large datasets offline.
+•	Foundation model deployments can be optimised by using smaller or compressed model variants and by hosting multiple models on shared infrastructure, reducing the cost of large GPU instances.
+•	SageMaker Model Registry catalogues model versions with approval status, while Lineage Tracking records the data, code and parameters behind each model — including across AWS accounts — which supports auditability and compliance.
+•	SageMaker Ground Truth (data labelling), Model Monitor (data and model drift detection) and Clarify (bias detection and explainability) cover model quality; Amazon has announced these are being deprecated, so current replacements should be confirmed before use.
+•	SageMaker JumpStart provides pre-built and open-source foundation models deployable in a few steps; SageMaker Pipelines automates the lifecycle; SageMaker Unified Studio combines data, analytics and AI in one workspace.
+•	SageMaker Neo compiles and optimises models for edge devices, allowing inference to run locally — for example, a camera on a production line detecting defects without sending every image to the cloud.
+•	AWS Lambda runs short-lived code in response to events without server management, and is the most common way to call Amazon Bedrock from an application; its integration patterns include synchronous invocation, asynchronous hand-off, and event stream processing.
+•	Amazon API Gateway acts as the front door to an AI application, handling authentication, throttling, caching and usage plans; because it has a maximum wait time for backend responses, long model outputs are better served with streaming or asynchronous patterns.
+•	AWS AppConfig stores application settings outside the code, enabling dynamic foundation model selection — switching models, prompt versions or inference parameters with gradual rollout and rollback, without redeploying the application.
+•	AWS Step Functions orchestrates multi-step workflows using states such as Task, Choice, Parallel, Wait and Map, and is well suited to prompt chaining, where several focused prompts are run in sequence with human approval steps where needed.
+•	The circuit breaker pattern prevents a failing model from causing a wider outage by temporarily routing requests to a fallback — such as a smaller model or a cached response — before testing whether the service has recovered.
+•	Amazon SQS queues work so it is processed at a sustainable rate, Amazon SNS broadcasts messages to multiple subscribers, and Amazon EventBridge routes events to targets using rules — together these decouple components so a slow service does not hold up the rest.
+•	Amazon AppFlow transfers data from SaaS applications such as Salesforce into AWS services, supporting data ingestion for AI workloads.
+•	AWS CodePipeline, CodeBuild and CodeDeploy provide CI/CD — building, testing and deploying changes with in-place, canary or blue/green strategies; prompt and model configuration changes should follow the same process as code changes.
+•	MLflow tracks experiments with LLMs, recording which prompt, model and parameter combinations produced the best results so that decisions are based on evidence rather than memory.
+•	AWS Amplify builds and hosts web and mobile front ends, and AWS AppSync supports real-time updates, such as streaming generated responses to the user interface.
+•	AWS Outposts brings AWS infrastructure on premises where data residency rules require it, and AWS Wavelength places compute at the edge of 5G networks for very low-latency mobile applications.
+
+
+Reflections:
+1. The main idea I took from this week is that a model is not finished when it is trained — it needs looking after for as long as it is in use. Safe rollouts, version tracking and lineage felt like administration at first, but they are what make a model trustworthy in a real business.
+2. This week showed me that the model is only one part of an AI application — most of the work is in the services around it. The ideas I will keep are that queues protect a model from sudden spikes, and that a prompt change is a real change that should be tested before it goes live.
+
+Next week's plan: Governance and QA; Security, Identity, and Compliance
+
