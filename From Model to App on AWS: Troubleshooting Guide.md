@@ -11,7 +11,8 @@ part1: https://youtu.be/tGUo0W8b27A
 part2: https://youtu.be/J9fNY33b5Wc
 part3:https://youtu.be/tsGB2fA7x5I
 
-Three troubleshooting walkthroughs based on the Section 6 and Section 7 labs of the AWS Certified Generative AI Developer – Professional course (*Managing Models with SageMaker AI* and *More Tools for Building AI Applications*).
+Three troubleshooting walkthroughs based on the labs of the AWS Certified Generative AI Developer – 
+(*Managing Models with SageMaker AI* and *More Tools for Building AI Applications*).
 
 > Scenario-based walkthroughs written from the course labs and AWS documentation. I haven't run these in a live AWS account yet.
 
