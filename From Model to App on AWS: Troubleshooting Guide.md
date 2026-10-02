@@ -19,7 +19,7 @@ Three troubleshooting walkthroughs based on the labs of the AWS Certified Genera
 
 ## 1: JumpStart Model Won't Deploy
 
-**Related lab:** Hands On: SageMaker JumpStart (Section 6, lecture 155)
+**Related lab:** Hands On: SageMaker JumpStart
 **Concepts:** SageMaker JumpStart, real-time endpoints, instance types, service quotas, EULAs
 
 ### Scenario
@@ -74,7 +74,7 @@ predictor.predict({"inputs": "Explain RAG in one sentence."})
 
 ## 2: Step Functions Prompt Chain Fails at Step Two
 
-**Related lab:** Lab: Prompt Chaining with Step Functions and Bedrock (Section 7, lecture 169)
+**Related lab:** Lab: Prompt Chaining with Step Functions and Bedrock
 **Concepts:** Step Functions, Bedrock optimised integration, state machine IAM roles, JSONPath, `ResultSelector` / `ResultPath`
 
 ### Scenario
@@ -137,7 +137,7 @@ The execution graph shows both states green. *Classify*'s input contains both `e
 
 ## 3: CodeBuild Fails Before Running a Single Test
 
-**Related labs:** AWS CodeBuild – Hands On, Parts 1 and 2 (Section 7, lectures 174–175) · AWS CodePipeline – Hands On (lecture 172)
+**Related labs:** AWS CodeBuild · AWS CodePipeline
 **Concepts:** CodePipeline, CodeBuild, `buildspec.yml`, build phases, testing prompt changes
 
 ### Scenario
