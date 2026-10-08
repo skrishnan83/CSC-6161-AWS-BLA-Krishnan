@@ -1,0 +1,30 @@
+Focus: Governance and QA; Security, Identity, and Compliance
+Resources: AWS SkillBuilder Cloud Practitioner Essentials, Udemy AWS Generative AI course (Stephane Maarek & Frank Kane)
+
+Summary of Learning:
+•	Evaluating generative AI is harder than testing conventional software, because the same input can produce different outputs and there are many acceptable answers; evaluation therefore measures how close a response is to a good one rather than whether it matches exactly.
+•	The main evaluation approaches are human review (best for tone and judgement), automatic metrics against reference answers (fast and inexpensive at scale), and LLM-as-a-judge, where a second model grades responses against defined criteria.
+•	ROUGE measures overlap with the reference answer and is commonly used for summarisation; BLEU measures overlap in the other direction and is commonly used for translation; BERTScore compares embeddings to assess semantic similarity, so it does not penalise correct answers that use different wording.
+•	Amazon Bedrock model evaluations support automatic, human and LLM-as-a-judge evaluation, using built-in datasets or a custom prompt dataset — a custom dataset based on real user questions gives a more relevant assessment for a specific use case.
+•	Deployment validation compares a new model or prompt against a golden set of questions with agreed answers before release, followed by a staged rollout; Bedrock agent tracing shows each reasoning step and tool call an agent makes.
+•	AWS describes responsible AI in eight dimensions: fairness, explainability, privacy and security, safety, controllability, veracity and robustness, governance, and transparency — several of which can only be demonstrated through measurement.
+•	Amazon CloudWatch Logs stores application logs and supports Logs Insights queries; Bedrock model invocation logging can capture prompts and responses, which also means access to those logs must be controlled.
+•	CloudWatch alarms monitor metrics such as InvocationThrottles, InvocationLatency and OutputTokenCount and send notifications through Amazon SNS; CloudWatch RUM measures performance and errors experienced by real users in the browser.
+•	AWS CloudTrail records API activity — who called which API, when and from where — but does not record the content of Bedrock prompts and responses, which requires model invocation logging.
+•	AWS X-Ray traces a single request across services to identify where latency occurs, and AWS Lake Formation provides fine-grained, column- and row-level access control over data lakes, governing what data AI workloads can access.
+•	The principle of least privilege underpins AWS security: every user, role and service should receive only the permissions needed for its task, which limits the impact of any misuse or compromise.
+•	AWS IAM manages access through users, groups, roles and policies; roles provide temporary credentials for services and people, and multi-factor authentication adds a second verification step at sign-in.
+•	AWS IAM Identity Center provides a single sign-on across multiple AWS accounts with different permission sets in each, and AWS Control Tower sets up a multi-account environment with preventive and detective controls already in place.
+•	Data should be encrypted at rest and in transit; AWS KMS creates and manages encryption keys, records every key use in CloudTrail, and uses key policies to control which principals may use each key.
+•	Data masking hides part of a sensitive value, such as all but the last four digits of a card number, while salting adds random data before hashing so that identical inputs do not produce identical stored values.
+•	AWS Secrets Manager stores credentials and API keys securely and supports automatic rotation, removing secrets from application code; Amazon Macie scans Amazon S3 to discover sensitive and personal data.
+•	Amazon Cognito provides user sign-up and sign-in for applications, and AWS WAF filters web traffic — rate-based rules are particularly useful for AI applications because they limit token consumption as well as server load.
+•	Amazon VPC provides network isolation: security groups are stateful, instance-level firewalls with allow rules only, network ACLs are stateless, subnet-level controls with allow and deny rules, and VPC Flow Logs record network traffic.
+•	VPC endpoints and AWS PrivateLink allow access to services such as Amazon Bedrock without traversing the public internet, while VPC peering, VPN and AWS Direct Connect provide private connectivity between networks.
+
+
+Reflection:
+The main idea I took from this week is that you cannot manage what you cannot see. Evaluation tells you whether the AI is good before release, and monitoring tells you whether it stays good afterwards. I also learned that each monitoring tool answers a different question, which made them much easier to tell apart.
+This week showed me that security is built from layers rather than a single service. The idea I found most useful for AI is that sensitive data should be found and protected before an AI system can search it, and that prompts can be kept off the public internet entirely using VPC endpoints.
+
+Next week's plan: Other Services You Should Know
