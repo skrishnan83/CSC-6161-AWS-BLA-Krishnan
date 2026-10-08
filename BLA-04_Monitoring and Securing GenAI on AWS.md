@@ -3,7 +3,7 @@
 ## Monitoring and Securing GenAI on AWS: Troubleshooting Guide
 
 **LinkedIn Activity:** https://www.linkedin.com/in/krishnansmita/recent-activity/all/ 
----
+>
 **View Tutorial on YouTube:** https://youtu.be/eehgY_bBOfM , https://youtu.be/oo-BlDv7Es4 , https://youtu.be/mYSiCGN_Bao
 
 Three troubleshooting walkthroughs based on the labs of the AWS Certified Generative AI Developer – Professional course (*Governance and QA* and *Security, Identity, and Compliance*).
