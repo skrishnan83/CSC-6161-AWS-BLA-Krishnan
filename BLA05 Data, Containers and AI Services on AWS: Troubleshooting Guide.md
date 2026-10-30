@@ -4,7 +4,7 @@
 
 **LinkedIn Activity:** https://www.linkedin.com/posts/krishnansmita_bla-05-part-1-making-sense-of-data-on-aws-activity-7521762682392301570-ykfl?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAL-jvEBG3XA5cCh-Z3noyzpP1Fi4LZ61wk 
 
-**View Tutorial on YouTube:** https://youtu.be/UVGVSMpqsIw , [link 2] , [link 3]
+**View Tutorial on YouTube:** https://youtu.be/UVGVSMpqsIw , [https://youtu.be/G0yPVLVrGYk] , [link 3]
 
 Three troubleshooting walkthroughs based on the labs of the AWS Certified Generative AI Developer – Professional course (*Other Services You Should Know*: Analytics; Compute, Container and Customer Engagement; Database; Developer Tools; Machine Learning).
 
