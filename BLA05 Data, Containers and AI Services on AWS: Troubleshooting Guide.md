@@ -2,7 +2,10 @@
 
 ## Data, Containers and AI Services on AWS: Troubleshooting Guide
 
-**LinkedIn Activity:** https://www.linkedin.com/posts/krishnansmita_bla-05-part-1-making-sense-of-data-on-aws-activity-7521762682392301570-ykfl?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAL-jvEBG3XA5cCh-Z3noyzpP1Fi4LZ61wk 
+**LinkedIn Activity:** 
+Part 1: https://www.linkedin.com/posts/krishnansmita_bla-05-part-1-making-sense-of-data-on-aws-activity-7521762682392301570-ykfl?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAL-jvEBG3XA5cCh-Z3noyzpP1Fi4LZ61wk 
+part 2: https://lnkd.in/p/gckJe37y
+Part 3:
 
 **View Tutorial on YouTube:** https://youtu.be/UVGVSMpqsIw , [https://youtu.be/G0yPVLVrGYk] , [link 3]
 
