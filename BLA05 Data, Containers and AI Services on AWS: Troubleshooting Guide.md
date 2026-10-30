@@ -7,7 +7,7 @@ Part 1: https://www.linkedin.com/posts/krishnansmita_bla-05-part-1-making-sense-
 part 2: https://lnkd.in/p/gckJe37y
 Part 3:
 
-**View Tutorial on YouTube:** https://youtu.be/UVGVSMpqsIw , [https://youtu.be/G0yPVLVrGYk] , [link 3]
+**View Tutorial on YouTube:** https://youtu.be/UVGVSMpqsIw , https://youtu.be/G0yPVLVrGYk , https://youtu.be/SGwhTTqcSCY
 
 Three troubleshooting walkthroughs based on the labs of the AWS Certified Generative AI Developer – Professional course (*Other Services You Should Know*: Analytics; Compute, Container and Customer Engagement; Database; Developer Tools; Machine Learning).
 
