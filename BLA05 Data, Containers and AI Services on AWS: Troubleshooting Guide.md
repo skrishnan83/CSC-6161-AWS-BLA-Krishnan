@@ -4,7 +4,7 @@
 
 **LinkedIn Activity:** 
 Part 1: https://www.linkedin.com/posts/krishnansmita_bla-05-part-1-making-sense-of-data-on-aws-activity-7521762682392301570-ykfl?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAL-jvEBG3XA5cCh-Z3noyzpP1Fi4LZ61wk 
-part 2: https://lnkd.in/p/gckJe37y
+part 2: https://www.linkedin.com/posts/krishnansmita_bla-05-part-2-where-your-ai-app-runs-and-activity-7522043819761238016-6hc_?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAL-jvEBG3XA5cCh-Z3noyzpP1Fi4LZ61wk
 Part 3: https://www.linkedin.com/posts/krishnansmita_bla-05-part-3-infrastructure-as-code-and-activity-7522046027797868545-UwPI?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAL-jvEBG3XA5cCh-Z3noyzpP1Fi4LZ61wk
 
 **View Tutorial on YouTube:** https://youtu.be/UVGVSMpqsIw , https://youtu.be/G0yPVLVrGYk , https://youtu.be/SGwhTTqcSCY
