@@ -3,7 +3,7 @@
 ## Data, Containers and AI Services on AWS: Troubleshooting Guide
 
 **LinkedIn Activity:** [link 1] , [link 2] , [link 3]
-> **View Tutorial on YouTube:** [link 1] , [link 2] , [link 3]
+> **View Tutorial on YouTube:** https://youtu.be/UVGVSMpqsIw , [link 2] , [link 3]
 
 Three troubleshooting walkthroughs based on the labs of the AWS Certified Generative AI Developer – Professional course (*Other Services You Should Know*: Analytics; Compute, Container and Customer Engagement; Database; Developer Tools; Machine Learning).
 
