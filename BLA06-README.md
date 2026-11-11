@@ -2,8 +2,8 @@
 
 ## Operations, Networking and Storage for GenAI Apps: Troubleshooting Guide
 
-**LinkedIn Activity:** [link 1] , [link 2] , [link 3]
-**View on YouTube:** [link 1] , [link 2] , [link 3]
+**LinkedIn Activity:** [https://lnkd.in/p/gZkhJ7M8]
+**View on YouTube:** [https://www.youtube.com/watch?v=OLY8puXvD9A&t=9s] , [link 2] , [link 3]
 
 Three troubleshooting walkthroughs based on the last *Other Services You Should Know* labs of the AWS Certified Generative AI Developer – Professional course (Management and Governance; Migration and Transfer; Networking and Content Delivery; Storage), plus a short note on the GenAI architecture trade-offs that close the section.
 
